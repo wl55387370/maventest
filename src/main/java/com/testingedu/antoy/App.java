@@ -14,7 +14,7 @@ import com.testingedu.will.LoginTest;
  */
 public class App 
 {
-    public static void main( String[] args ) throws InterruptedException 
+    public static void main( String[] args ) throws InterruptedException  
     {
     	//设置浏览器路径
     	System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
@@ -26,9 +26,9 @@ public class App
     	LoginTest login = new LoginTest(driver);
     	login.login();
     	
-    	/*调用查看模块，执行查看邮件用例
+    	//调用查看模块，
     	CreatTest creat = new CreatTest(driver);
-    	creat.creat();*/
+    	creat.creat();
     	
     	//关闭浏览器
     	try {

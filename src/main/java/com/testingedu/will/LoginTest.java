@@ -1,9 +1,6 @@
 package com.testingedu.will;
 
-import javax.print.attribute.standard.PrinterLocation;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
 
 public class LoginTest {
@@ -17,15 +14,15 @@ public class LoginTest {
 	
     public void login() throws InterruptedException {
     	//打开登录页面
-    	driver.get("https://mail.qq.com");
+    	driver.get("http://www.testingedu.com.cn:8000/Home/user/login.html");
     	//进入iframe标签
-    	driver.switchTo().frame("login_frame");
-    	Thread.sleep(2000);
-    	driver.findElement(By.xpath("//*[@id=\"u\"]")).sendKeys("286075568");
-    	Thread.sleep(2000);
-    	driver.findElement(By.xpath("//*[@id=\"p\"]")).sendKeys("wlqin1314520");
-    	Thread.sleep(2000);
-    	driver.findElement(By.xpath("//*[@id=\"login_button\"]")).click();
+    
+    	driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("13800138006");
+    	
+    	driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("123456");
+    	driver.findElement(By.xpath("//*[@id=\"verify_code\"]")).sendKeys("1111");
+    	
+    	driver.findElement(By.xpath("//*[@id=\"loginform\"]/div/div[6]/a")).click();
     	
     	
     	System.out.println("用户登录完成");
