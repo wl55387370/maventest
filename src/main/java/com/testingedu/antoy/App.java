@@ -26,13 +26,13 @@ public class App
     	LoginTest login = new LoginTest(driver);
     	login.login();
     	
-    	//调用查看模块，
+    	//调用查看模块，完成购物车添加
     	CreatTest creat = new CreatTest(driver);
     	creat.creat();
     	
     	//关闭浏览器
     	try {
-			Thread.sleep(9000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

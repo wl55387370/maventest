@@ -10,7 +10,7 @@ public class LoginTest {
 	public LoginTest(WebDriver d) {
 		driver=d;
 	}
-	//执行Login模块自动化
+	//执行Login模块自动化的测试
 	
     public void login() throws InterruptedException {
     	//打开登录页面
